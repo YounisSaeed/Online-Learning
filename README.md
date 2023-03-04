@@ -12,7 +12,7 @@ This project is an online learning platform that provides access to courses, tut
 - Discussion forums and peer-to-peer collaboration
 - Mobile-friendly design for on-the-go learning
 # Installation
-
+- pip install -r requirements.txt
 
 # Usage
 
