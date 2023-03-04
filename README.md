@@ -1,5 +1,4 @@
 # [Online Learning Platform]
-Project Title
 
 
 # Description
