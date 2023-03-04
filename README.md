@@ -1,6 +1,6 @@
-# Online-Learning
+# [Online Learning Platform]
 Project Title
-[Online Learning Platform]
+
 
 # Description
 This project is an online learning platform that provides access to courses, tutorials, and other educational resources for learners of all levels. Our platform is designed to be user-friendly, with a focus on interactive, engaging learning experiences that cater to different learning styles.
