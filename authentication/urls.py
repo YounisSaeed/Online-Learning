@@ -2,7 +2,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from django.conf import settings
 from django.conf.urls.static import static
-from .api.viewsets import registration
+from .api import viewsets 
 
 router = DefaultRouter()
 #router.register(r'Course', CourseViewSet, basename='Course')
@@ -11,7 +11,9 @@ router = DefaultRouter()
 urlpatterns = [
     
     path('', include(router.urls)),
-    path('signup/',registration,name='signup'),
+    path('signup/',viewsets.registration,name='signup'),
+    path('login/',viewsets.login,name='login'),
+    path('logout/',viewsets.logout,name='logout'),
 ]
 
 if settings.DEBUG:
