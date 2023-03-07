@@ -11,9 +11,9 @@ router = DefaultRouter()
 urlpatterns = [
     
     path('', include(router.urls)),
-    path('signup/',viewsets.registration,name='signup'),
-    path('login/',viewsets.login,name='login'),
-    path('logout/',viewsets.logout,name='logout'),
+    path('signup/',viewsets.RegistrationView.as_view(),name='signup'),
+    path('login/',viewsets.LoginView.as_view(),name='login'),
+    path('logout/',viewsets.LogoutView.as_view(),name='logout'),
 ]
 
 if settings.DEBUG:
