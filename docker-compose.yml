@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: DockerFile
+      # specify the image name here instead of in the 'image' section
+      # this will create a new image with the specified name after building
+      # using the Dockerfile
+      args:
+        PYTHON_VERSION: "3.7"
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    container_name: online-learning-container
